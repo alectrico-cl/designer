@@ -802,12 +802,6 @@
      </amp-state>
     -->
 
-     <amp-state
-       id = "catalogo"
-       src="https://www.alectrico.cl/listados/designer/productos.json">
-     </amp-state>
-
-
     <amp-sidebar id="drawermenu" layout="nodisplay">
       <!--
       <a href="https://servicios.alectrico.cl" class="caps text-decoration-none block p1">Servicios</a>
@@ -1781,12 +1775,21 @@
                 </script>
               </amp-state>
 
+	      <!---
 	      <amp-state id="product">
 		<script type="application/json">
 		  {
 		  }
 		</script>
 	      </amp-state>
+	      cambiando a lista dinámica
+              -->
+
+              <amp-state
+                id = "product"
+                src="https://www.alectrico.cl/listas/designer/productos.json">
+               </amp-state>
+
 
 	      <p class="price-description"> Seleccionado:
 		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta Led.</span> </p>
