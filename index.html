@@ -1776,8 +1776,14 @@
 
               <amp-state
                 id="catalogo"
-		src="https://www.alectrico.cl/listas/designer/productos.json" >
+		src="https://www.alectrico.cl/lista/designer/catalogo.json" >
               </amp-state>
+
+              <amp-state
+                id="servicios"
+                src="http://www.alectrico.cl/lista/designer/servicios.json" >
+              </amp-state>
+
 
 	      <amp-state id="product">
 		<script type="application/json">
@@ -1930,15 +1936,15 @@
 
 		    "coral": {
 		      "ids": {
-			"0": "859",
-			"1": "860",
-			"2": "861",
-			"3": "862",
-			"4": "863",
-			"5": "864",
-			"6": "865",
-			"7": "866",
-			"8": "867"
+			"0": "858",
+			"1": "859",
+			"2": "860",
+			"3": "861",
+			"4": "862",
+			"5": "863",
+			"6": "864",
+			"7": "865",
+			"8": "866"
 		      },
 		      "nombres": {
 			"0": "Plancha.",
@@ -1982,8 +1988,8 @@
 
 		    "red": {
 		      "ids": {
-			"0": "868",
-			"1": "869"
+			"0": "867",
+			"1": "868"
 		      },
 		      "nombres": {
 			"0": "Cocina Encimera Vitrocerámica.",
@@ -2273,6 +2279,8 @@
 	</form>
 	<!--
 	checkout-section
+	http://locahost.servicios.json
+	- src="https://www.alectrico.cl/api/v1/electrico/circuitos/get/?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM"
 	-->
         <section>	
 	  <amp-list 
@@ -2284,7 +2292,7 @@
 	    items = "."
 	    single-item
 	    layout="fixed-height"
-	    src="https://www.alectrico.cl/api/v1/electrico/circuitos/get/?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM"
+            src="https://www.alectrico.cl/api/v1/electrico/circuitos/get.json/?amp_cliente_id=CLIENT_ID(uid)&_=RANDOM"
 	    id="carrusel-list">
 	    <div>
             </div>
