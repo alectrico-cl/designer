@@ -933,6 +933,31 @@
 	  </div>
 	</amp-lightbox>
 
+<amp-state id="images">
+  <script type="application/json">
+    {
+      "imageUrl_1": "https://storage.googleapis.com/alectrica/img/casita.png",
+      "imageUrl_2": "https://storage.googleapis.com/alectrica/img/sintomas/dolores_de_garganta_01.jpeg",
+      "imageUrl_3": "https://storage.googleapis.com/alectrica/img/sintomas/secreciones_nasales_01.jpg"
+    }
+  </script>
+</amp-state>
+<button on="tap:AMP.setState({imageUrl: images.imageUrl_1})">Image casita</button>
+<button on="tap:AMP.setState({imageUrl: images.imageUrl_2})">Image garganta</button>
+<button on="tap:AMP.setState({imageUrl: images.imageUrl_3})">Image secreciones</button>
+
+
+<amp-img id="amp-img"
+  src="http://via.placeholder.com/350x350"
+  layout="responsive"
+  width="350"
+  height="350"
+  [src]="imageUrl ? imageUrl : images.imageUrl_1">
+</amp-img>
+
+
+
+
 	<div class="product-gallery">
 		<ul hidden
 		  [hidden]="product.selectedColor != 'blue'">
