@@ -2030,8 +2030,15 @@
 	      <span > Circuito que recibirá el electrodoméstico: </span>
 	      <span [text]="product.circuitos[product.selectedPotencia]">I: Iluminación</span>
 	      <span [text]="product[product.selectedColor].potencias[product.selectedPotencia]">2200 W</span>
+              <span [text]="product[product.selectedColor].ids[product.selectedSlideForGreen].id">id</span>
+
               <span [text]="product.selectedColor">Color seleccionado</span>
+              <span [text]="product.selectedSlideForBlue">Slide for Blued</span>
               <span [text]="product.selectedSlideForGreen">Slide for Green</span>
+              <span [text]="product.selectedSlideForGold">Slide for Gold</span>
+              <span [text]="product.selectedSlideForCoral">Slide for Coral</span>
+              <span [text]="product.selectedSlideForRed">Slide for Red</span>
+
 	    </p>
 	 <!-- fin de Galería de Productos -->
 
