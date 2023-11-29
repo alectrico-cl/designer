@@ -1271,11 +1271,6 @@
 		      role="button">
 		    </amp-img>
 		  </li>
-
-
-
-
-
 		</ul>
 	      </div>
 
@@ -1437,8 +1432,6 @@
 		  </div>
 
 
-
-
 		  <div 
 		    role="button"
 		    tabindex="0">
@@ -1457,9 +1450,6 @@
 		    </amp-img>
 
 		  </div>
-
-
-
 
 		</amp-carousel>
 
@@ -1616,9 +1606,6 @@
 		    role="button"
 		    tabindex="0">
 		  </amp-img>
-
-
-
 
 		  <amp-img src="/img/secadora_de_ropa.png"
 		    width="1024"
@@ -1804,8 +1791,6 @@
               </amp-state>
 
 	      <p class="price-description"> Seleccionado:
-                <span [text]="product['green'].nombres['0']">-----.</span> </p>
-                <span [text]="product['green'].nombres[product.selectedSlide]">-----.</span> </p>
 		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta Led.</span> </p>
 
 	      <!--
@@ -1832,11 +1817,11 @@
 		    layout="container"
 		    [selected]="product.selectedColor"
 		    on="select:AMP.setState({
-				product: {
-				  selectedColor: event.targetOption,
-				  selectedPotencia: product[event.targetOption].sizes[product.selectedPotencia] != 'inadecuado' ? product.selectedPotencia : product[event.targetOption].defaultPotencia
-				}
-			      })">
+			product: {
+			  selectedColor: event.targetOption,
+			  selectedPotencia: product[event.targetOption].sizes[product.selectedPotencia] != 'inadecuado' ? product.selectedPotencia : product[event.targetOption].defaultPotencia
+			}
+		      })">
 		    <ul class="p0 m1">
 
 		      <li>
@@ -2171,7 +2156,7 @@
 
 	<amp-install-serviceworker
 	  src="/sw.js"
-	  data-iframe-src="https://designer.com/sw.js"
+	  data-iframe-src="https://designer.alectrico.cl/sw.js"
 	  layout="nodisplay">
 	</amp-install-serviceworker>
 
@@ -2420,11 +2405,7 @@
 	    <div overflow = "" class = "list-overflow">VER MÁS</div>
             <div placeholder>Cargando ...</div>
             <div fallback>El servidor no ha suministrado los datos, intente más tarde.</div>
-
 	  </amp-list>
-
-
-
 
 
 	  <template type = "amp-mustache"
@@ -2442,9 +2423,6 @@
 		</h3>
 		{{#items}}
 		  <div class = "xs-hide flex justify-between">
-                    
-                    
-
 
 		    <h3>
 		       {{tipo_circuito.letras}}-{{nombre}}
