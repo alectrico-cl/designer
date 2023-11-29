@@ -1804,6 +1804,8 @@
               </amp-state>
 
 	      <p class="price-description"> Seleccionado:
+                <span [text]="product['green'].nombres['0']">-----.</span> </p>
+                <span [text]="product['green'].nombres[product.selectedSlide]">-----.</span> </p>
 		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta Led.</span> </p>
 
 	      <!--
@@ -2030,7 +2032,6 @@
 	      <span > Circuito que recibirá el electrodoméstico: </span>
 	      <span [text]="product.circuitos[product.selectedPotencia]">I: Iluminación</span>
 	      <span [text]="product[product.selectedColor].potencias[product.selectedPotencia]">2200 W</span>
-              <span [text]="product[product.selectedColor].ids[0].id">id</span>
 	    </p>
 	 <!-- fin de Galería de Productos -->
 
