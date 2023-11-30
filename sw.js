@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js');
 
 if (workbox) {
@@ -18,3 +19,17 @@ if (workbox) {
     console.log(`Boo! Workbox didn't load 😬`);
 }
 
+=======
+//https://github.com/ampproject/amp-sw
+importScripts('https://cdn.ampproject.org/sw/amp-sw.js');
+AMP_SW.init({
+  assetCachingOptions: [{
+    regexp: /\.(png|jpg|woff2|woff|css|js)/,
+    cachingStrategy: 'CACHE_FIRST',
+  }],
+  offlinePageOptions: {
+    url: '/offline.html',
+    assets: [],
+  },
+});
+>>>>>>> gh-pages
