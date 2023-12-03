@@ -1794,7 +1794,8 @@
 		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta Led.</span> </p>
 
               <p class="price-description"> ColorSeleccionado:
-                <span [text]="product.selectedColor">Green.</span> </p>
+                <span [text]="product.selectedColor">green.</span> </p>
+
               <p class="price-description"> selectedPotencia
                 <span [text]="product.selectedPotencia">0.</span> </p>
 
@@ -1802,7 +1803,7 @@
                 <span [text]="product.selectedSlide">0.</span> </p>
 
               <p class="price-description"> SlideSeleccionadoForBlue
-                <span [text]="product.selectedSlideForGreen">0.</span> </p>
+                <span [text]="product.selectedSlideForBlue">0.</span> </p>
 
               <p class="price-description"> SlideSeleccionadoForGreen
                 <span [text]="product.selectedSlideForGreen">0.</span> </p>
@@ -2052,11 +2053,11 @@
 	  <!---
          <input type="hidden"
          -->
-	  <input type="hidden"
+	  <input 
 	    name="carga_id"
 	    value = "0"
 	    [value] ="product[product.selectedColor].ids[
-	    (product.selectedColor == 'green') ? product.selectedColorForGreen : '-1'"
+	    (product.selectedColor == 'green') ? product.selectedColorForGreen : '-1']"
 	    >
 
 
