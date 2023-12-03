@@ -1791,16 +1791,18 @@
               </amp-state>
 
 	      <p class="price-description"> Seleccionado:
-		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta Led.</span> </p>
+		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta Led.
+		</span>
+                <span [text] ="product[product.selectedColor].ids[
+                   product.selectedColor == 'blue'   ? product.selectedSlideForBlue   :
+                   product.selectedColor == 'green'  ? product.selectedSlideForGreen  :
+                   product.selectedColor == 'golden' ? product.selectedSlideForGolden : 
+                   product.selectedColor == 'coral'  ? product.selectedSlideForCoral  : 
+                   product.selectedColor == 'red'    ? product.selectedSlideForRed    :
+                   0 ]"> 21089 
+		</span> 
+	      </p>
 
-	      <p class="prices-description" > Id:
-	      <span [text] ="product[product.selectedColor].ids[
-                product.selectedColor == 'blue'   ? product.selectedSlideForBlue   :
-                product.selectedColor == 'green'  ? product.selectedSlideForGreen  :
-                product.selectedColor == 'golden' ? product.selectedSlideForGolden : 
-                product.selectedColor == 'coral'  ? product.selectedSlideForCoral  : 
-                product.selectedColor == 'red'    ? product.selectedSlideForRed    :
-		0 ]"> 21089  </span> </p>
 	      <!--
                 on = "submit-success:carrusel-list.refresh,cart-list.refresh;submit-error:carrusel-list.refresh,cart-list.refresh,carrusel-list.show,boton-login.show"
 
@@ -1863,7 +1865,7 @@
 		  <amp-selector name="quantity"
 		    layout="container">
 		    <ul class="p0 m1">
-		      <li option="1" selected>"1"</li>
+		      <li option="1" selected>1</li>
 		      <li option="5">5</li>
 		      <li option="10">10</li>
 		    </ul>
