@@ -2056,7 +2056,12 @@
 	  <input 
 	    name="carga_id"
 	    value = "0"
-	    [value] ="product[product.selectedColor].ids[product.selectedColor == 'green' ? product.selectedSlideForGreen : 0]"
+	    [value] ="product[product.selectedColor].ids[product.selectedColor == 'green' ? product.selectedSlideForGreen :
+
+             product.selectedColor == 'golden' ? product.selectedSlideForGolden : 0
+	    
+
+	    ]"
 	    >
 
 
