@@ -2019,6 +2019,13 @@
 				  ? ''
 				  : 'inadecuado'">Z</li>
 
+                      <label for="size">Circuito ElectroMovilidad:</label>
+                      <li option="V"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'">V</li>
+
 
 		  </ul>
 		  </amp-selector>
