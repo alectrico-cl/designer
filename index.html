@@ -1056,13 +1056,14 @@
 		<ul
 		  [hidden]="product.selectedColor != 'green'">
 
+
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 0, selectedSlide: 0}})"
-		      src="/img/ampolleta_incandescente_60_40.png"
+                     src="/img/led_60_40.png"
                       width="60"
                       height="40"
-                      class="selected"
-                      [class]="product.selectedSlideForGreen == 0 ? 'selected' : '' "
+                      class=""
+                      [class]="product.selectedSlideForGreen == 0 ? 'selected fadeIn' : '' "
                       tabindex="0"
                       role="button">
                     </amp-img>
@@ -1070,11 +1071,11 @@
 
                   <li>
                     <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 1, selectedSlide: 1}})"
-                     src="/img/led_60_40.png"
+		      src="/img/ampolleta_incandescente_60_40.png"
                       width="60"
                       height="40"
-                      class=""
-                      [class]="product.selectedSlideForGreen == 1 ? 'selected fadeIn' : '' "
+                      class="selected"
+                      [class]="product.selectedSlideForGreen == 1 ? 'selected' : '' "
                       tabindex="0"
                       role="button">
                     </amp-img>
@@ -1465,6 +1466,17 @@
 		  [hidden]="product.selectedColor != 'green'">
 
 
+                  <amp-img src="/img/led.png"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+
+
                   <amp-img src="/img/ampolleta_incandescente.png"
                     width="1024"
                     height="682"
@@ -1475,14 +1487,6 @@
                   </amp-img>
 
 
-		  <amp-img src="/img/led.png"
-		    width="1024"
-		    height="682"
-		    layout="responsive"
-		    on="tap:gallery-lightbox"
-		    role="button"
-		    tabindex="0">
-		  </amp-img>
 
 		</amp-carousel>
 
