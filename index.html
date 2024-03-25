@@ -1055,17 +1055,7 @@
 
 		<ul
 		  [hidden]="product.selectedColor != 'green'">
-		  <li>
-		    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 0, selectedSlide: 0}})"
-		      src="/img/led_60_40.png"
-		      width="60"
-		      height="40"
-		      class="selected"
-		      [class]="product.selectedSlideForGreen == 0 ? 'selected' : '' "
-		      tabindex="0"
-		      role="button">
-		    </amp-img>
-		  </li>
+
 		  <li>
 		    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 1, selectedSlide: 1}})"
 		      src="/img/ampolleta_incandescente_60_40.png"
@@ -1078,6 +1068,18 @@
 		    </amp-img>
 		  </li>
 	   
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 0, selectedSlide: 0}})"
+                      src="/img/led_60_40.png"
+                      width="60"
+                      height="40"
+                      class="selected"
+                      [class]="product.selectedSlideForGreen == 0 ? 'selected' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
 
 		</ul>
 	      </div>
@@ -1803,8 +1805,8 @@
                    product.selectedColor == 'coral'  ? product.selectedSlideForCoral  : 
                    product.selectedColor == 'red'    ? product.selectedSlideForRed    :
                    0 ]"> 6926
-		   <!-- 22895 es el primer de de las maquets, debe verse en el backend o hacer un primer rodaje y tomar el número
-	     desde designer, para ello seleccionar green y mover para delante y atrás hasta que se muestr el id del pimero electrodompéstido -->
+		   <!-- 6926 es el primer id de las maquetas del grupo del color green, debe verse en el backend o hacer un primer rodaje y tomar el número
+	     desde designer, para ello seleccionar green y mover para delante y atrás hasta que se muestr el id del pimero electrodompéstido, este número también debe estar en el input de carga_id-->
 		</span> 
 	      </p>
 
