@@ -2679,7 +2679,6 @@
 		    <li>
 		      <amp-img on="tap:AMP.setState({empalme: {medio: 'soterrado'}})"
 			src="/img/edificio.png"
-			hidden
 			width="60"
 			height="40"
 			class="selected"
@@ -2704,6 +2703,7 @@
              </div>
 
 	     <div class = " flex items-strecht"
+	      
               [hidden] = "empalme.medio == 'aereo'" >
 	      <h1>{{empalme_soterrado_sugerido.tipo_de_empalme}}</h1>
 	       <div>
@@ -2716,7 +2716,7 @@
 	       </div>
 	     </div>
              <div class = " flex items-strecht"
-	      
+	      hidden
               [hidden] = "empalme.medio == 'soterrado'" >
 	      <h1>{{empalme_aereo_sugerido.tipo_de_empalme}}</h1>
                <div>
