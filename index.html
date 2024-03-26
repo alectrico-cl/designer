@@ -2073,32 +2073,39 @@
                    <ul class = "p0 m1">
                       <li option="V10"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V10'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V16'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 16A</li>
 
                       <li option="V16"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V16'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V20'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 20A</li>
 
                       <li option="V32"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V32'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V25'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 25A</li>
                       <li option="V40"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V40'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V32'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 32A</li>
 
                       <li option="V63"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V63'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V40'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 40A</li>
+                      <li option="V63"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V63'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'"> 63A</li>
+
+
                     </ul>
 
                       </template>
