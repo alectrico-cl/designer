@@ -1829,6 +1829,7 @@
                 src= "https://www.alectrico.cl/api/v1/electrico/circuitos/maquetas.json?_=RANDOM"  >
               </amp-state>
 
+
 	      <p class="price-description"> Seleccionado:
 		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">A_Led
 		</span>
@@ -2833,15 +2834,22 @@
 	</div>
       </template>
 
+             <!--- Battery  -->
+
+              <amp-state id="battery"
+                src= "https://www.alectrico.cl/api/v1/electrico/circuitos/battery.json?_=RANDOM"  >
+              </amp-state>
+
+
 
               <div class="product-gallery">
 
                 <ul
-                  [hidden]="product.selectedColor != 'green'">
+                  [hidden]="battery.selectedColor != 'green'">
 
 
                   <li>
-                    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 0, selectedSlide: 0}})"
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 0, selectedSlide: 0}})"
                      src="/img/led_60_40.png"
                       width="60"
                       height="40"
@@ -2853,7 +2861,7 @@
                   </li>
 
                   <li>
-                    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 1, selectedSlide: 1}})"
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 1, selectedSlide: 1}})"
                       src="/img/ampolleta_incandescente_60_40.png"
                       width="60"
                       height="40"
@@ -2866,6 +2874,8 @@
 
                 </ul>
               </div>
+
+
 
 
       <div class="my2">
