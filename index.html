@@ -2061,11 +2061,11 @@
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
                                   ? ''
-                                  : 'inadecuado'"> 10A</li>
+                                  : 'inadecuado'"> V</li>
 
                    </ul>
 
-               <section amp-access="NOT loggedIn"  amp-access-hide >
+               <section amp-access="loggedIn"  amp-access-hide class="items-center flex" >
                  <template amp-access-template type="amp-mustache">
 
                    <label for="electromovilidad">Ajustes de SAVE:</label>
