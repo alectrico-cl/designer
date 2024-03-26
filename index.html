@@ -2102,7 +2102,7 @@
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V63'] != 'inadecuado')
                                   ? ''
-                                  : 'inadecuado'"> 63A</li>
+                                  : 'inadecuado'"> 63A Triásico</li>
 
 
                     </ul>
@@ -2832,6 +2832,41 @@
           --->
 	</div>
       </template>
+
+
+              <div class="product-gallery">
+
+                <ul
+                  [hidden]="product.selectedColor != 'green'">
+
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 0, selectedSlide: 0}})"
+                     src="/img/led_60_40.png"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="product.selectedSlideForGreen == 0 ? 'selected fadeIn' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({product: {selectedSlideForGreen: 1, selectedSlide: 1}})"
+                      src="/img/ampolleta_incandescente_60_40.png"
+                      width="60"
+                      height="40"
+                      class="selected"
+                      [class]="product.selectedSlideForGreen == 1 ? 'selected' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
+                </ul>
+              </div>
+
 
       <div class="my2">
 	<!--
