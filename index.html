@@ -2065,36 +2065,36 @@
 
                    </ul>
 
-               <section amp-access="loggedIn"  amp-access-hide class="items-center flex" >
+               <section amp-access="loggedIn"  amp-access-hide  >
                  <template amp-access-template type="amp-mustache">
 
-                   <label for="electromovilidad">Protección Requerida:</label>
+                   <label for="electromovilidad">Protección Requerida en Electromovilidad </label>
 
                    <ul class = "p0 m1">
-                      <li option="V10"
+                      <li option="V16"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V16'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 16A</li>
 
-                      <li option="V16"
+                      <li option="V20"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V20'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 20A</li>
 
-                      <li option="V32"
+                      <li option="V25"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V25'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 25A</li>
-                      <li option="V40"
+                      <li option="V32"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V32'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 32A</li>
 
-                      <li option="V63"
+                      <li option="V40"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V40'] != 'inadecuado')
                                   ? ''
