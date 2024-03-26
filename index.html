@@ -2059,14 +2059,37 @@
 				  : 'inadecuado'">Z</li>
                    </ul>
 
-                   <label for="electromovilidad">Electromovilidad:</label>
+                   <label for="electromovilidad">Corriente Máxima:</label>
 
                    <ul class = "p0 m1">
-                      <li option="V"
+                      <li option="V10"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
                                   ? ''
-                                  : 'inadecuado'">Enchufe 10A</li>
+                                  : 'inadecuado'"> 10A</li>
+
+                      <li option="V16"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'"> 16A</li>
+
+                      <li option="V32"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'"> 32A</li>
+                      <li option="V40"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'"> 40A</li>
+
+                      <li option="V63"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'"> 63A</li>
 
 
                     </ul>
