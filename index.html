@@ -2056,32 +2056,41 @@
 			class="inadecuado"
 			[class]="(product[product.selectedColor].potencias['Z'] != 'inadecuado')
 				  ? ''
-				  : 'inadecuado'">Z</li>
-                   </ul>
-
-                   <label for="electromovilidad">Corriente Máxima:</label>
-
-                   <ul class = "p0 m1">
-                      <li option="V10"
+  				  : 'inadecuado'">Z</li>
+                       <li option="V"
                         class="inadecuado"
                         [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 10A</li>
 
+                   </ul>
+
+               <section amp-access="NOT loggedIn"  amp-access-hide >
+                 <template amp-access-template type="amp-mustache">
+
+                   <label for="electromovilidad">Ajustes de SAVE:</label>
+
+                   <ul class = "p0 m1">
+                      <li option="V10"
+                        class="inadecuado"
+                        [class]="(product[product.selectedColor].potencias['V10'] != 'inadecuado')
+                                  ? ''
+                                  : 'inadecuado'"> 10A</li>
+
                       <li option="V16"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V16'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 16A</li>
 
                       <li option="V32"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V32'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 32A</li>
                       <li option="V40"
                         class="inadecuado"
-                        [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
+                        [class]="(product[product.selectedColor].potencias['V40'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 40A</li>
 
@@ -2090,9 +2099,11 @@
                         [class]="(product[product.selectedColor].potencias['V'] != 'inadecuado')
                                   ? ''
                                   : 'inadecuado'"> 63A</li>
-
-
                     </ul>
+
+                      </template>
+                    </section>
+
 		  </amp-selector>
 		</div>
               </section>
