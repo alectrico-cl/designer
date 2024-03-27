@@ -2945,16 +2945,17 @@
               <p class="price-description"> Batería Seleccionada:
                 <span [text]="battery[battery.selectedColor].nombres[battery.selectedSlide]">Audi Q7 3.0 TDI e-tron 275 kW (373 CV)
                 </span>
-                <span [text] ="battery[battery.selectedColor].ids[
+                <span [text] ="battery[battery.selectedColor].p[
                    battery.selectedColor == 'blue'   ? battery.selectedSlideForBlue   :
                    battery.selectedColor == 'green'  ? battery.selectedSlideForGreen  :
                    battery.selectedColor == 'golden' ? battery.selectedSlideForGolden : 
                    battery.selectedColor == 'coral'  ? battery.selectedSlideForCoral  : 
                    battery.selectedColor == 'red'    ? battery.selectedSlideForRed    :
-                   0 ]"> 6958
-                   <!-- 6926 es el primer id de las maquetas del grupo del color green, debe verse en el backend o hacer un primer rodaje y tomar el número
+                   0 ]"> 17300
+                   <!-- 6958 es el primer id de las maquetas del grupo del color green, debe verse en el backend o hacer un primer rodaje y tomar el número
              desde designer, para ello seleccionar green y mover para delante y atrás hasta que se muestr el id del pimero electrodompéstido, este número también debe estar en el input de carga_id-->
                 </span>
+		<span> W</span>
               </p>
 
               <p class="price-description"> Cargador Seleccionado.
