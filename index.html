@@ -910,6 +910,12 @@
           Prepare con anticipación la visita del Electricista a Domicilio organizando sus electrodomésticos en circuitos. 
         </p>
 
+        <p id="product-description"
+          class="m1">
+          Realize el trabajo debido antes de comprar un auto eléctrico, vea si su casa necesita aumentar capacidad y luego obtenga la aprobación de la factibilidad desde su compañía eléctrica. Si su compañia no puede otorgarle una aumento de capacidad en un tiempo razonable eso podría ser un problema para cargar el auto en su casa. Cargarlo en otro lado es también incómodo y poco práctico. Los autos eléctricos están imaginados para invertirle tiempo de carga. Y ese tiempo de carga casi que solo puede ser cuando UD. está durmiendo.
+        </p>
+
+
 	<button class="ampstart-btn caps m1 mb3" 
 	  on="tap:watch-video-lightbox">
 	  Ver Video 
@@ -2835,6 +2841,36 @@
       </template>
 
              <!--- Battery  -->
+
+        <p id="product-description"
+          class="m1">
+	  Si lo prefiere puede seleccionar una batería desde esta galería para que designer elija y configure el cargador que corresponda. Se muestran solo algunos ejemplos. Lo que realmente interesa es el valor de la capacidad, el cual se da en términos de kW.
+	  Revise este ejemplo en https://www.km77.com/coches/audi/q7/2015/estandar/e-tron/q7-e-tron-2016/datos
+       </p>
+
+
+        <button class="ampstart-btn caps m1 mb3" 
+          on="tap:watch-video-lightbox">
+          Ver Video
+        </button>
+
+        <amp-lightbox id="watch-video-lightbox" 
+          layout="nodisplay">
+          <div class="amp-youtube-container">
+            <div class="video">
+              <a on="tap:watch-video-lightbox.close" 
+                role="button" 
+                tabindex="0">
+                Cerrar
+              </a>
+              <amp-youtube width="480"
+                height="270" 
+                data-videoid="z-9Fv0pjL7c">
+              </amp-youtube>
+            </div>
+          </div>
+        </amp-lightbox>
+
 
               <amp-state id="battery"
                 src= "https://www.alectrico.cl/api/v1/electrico/circuitos/batteries.json?_=RANDOM"  >
