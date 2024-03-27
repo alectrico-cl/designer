@@ -2969,7 +2969,7 @@
 		
                 <span [text] ="product[product.selectedColor].p[product.selectedColor == 'blue' ? battery.selectedSlideForBlue  : 0]"> 0
                 <span [text] ="product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0] "> 0
-               <span [text]="( battery[battery.selectedColor].p[battery.selectedSlide]) + ( product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue : 0])"  >No se ha calculado
+               <span [text]="( battery[battery.selectedColor].p[battery.selectedSlide]).toFixed(2) + ( product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue : 0].toFixed(2)"  >No se ha calculado
                 </span>
 
 
