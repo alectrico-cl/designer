@@ -2973,9 +2973,9 @@
                 <span [text] ="product[product.selectedColor].p[
                    product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0]
                    "> 0
-               <span [text]="battery[battery.selectedColor].p[battery.selectedSlide]
-			    /product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0]"
-		       >0
+		   <span [text]="{ battery[battery.selectedColor].p[battery.selectedSlide]
+				 /product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0]}"
+		       >no se ha calcualdo
                 </span>
 
 
