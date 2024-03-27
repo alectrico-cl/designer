@@ -2968,8 +2968,9 @@
                 </span>
 		
 		<span [text] ="product[product.selectedColor].p[product.selectedColor == 'blue' ? battery.selectedSlideForBlue  : 0]"> 0 </span>
-               <span [text]="( battery[battery.selectedColor].p[battery.selectedSlide]).toFixed(0)/( product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue : 0].toFixed(0))"  >No se ha calculado
-                </span>
+               <span [text]="(( battery[battery.selectedColor].p[battery.selectedSlide]).toFixed(0)/( product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue : 0].toFixed(0))).toFixed(0)"  >No se ha calculado </span>
+	       <span> horas </span>
+
 
 
                    <!-- 6926 es el primer id de las maquetas del grupo del color green, debe verse en el backend o hacer un primer rodaje y tomar el número
