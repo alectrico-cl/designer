@@ -2967,14 +2967,9 @@
                 <span [text]="battery[battery.selectedColor].p[battery.selectedSlide]">0
                 </span>
 		
-                <span [text] ="product[product.selectedColor].p[
-                   product.selectedColor == 'blue' ? battery.selectedSlideForBlue  : 0]
-                   "> 0
-                <span [text] ="product[product.selectedColor].p[
-                   product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0]
-                   "> 0
-		   <span [text]="( battery[battery.selectedColor].p[battery.selectedSlide] + product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0])"
-		       >no se ha calculado
+                <span [text] ="product[product.selectedColor].p[product.selectedColor == 'blue' ? battery.selectedSlideForBlue  : 0]"> 0
+                <span [text] ="product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue  : 0] "> 0
+               <span [text]="( battery[battery.selectedColor].p[battery.selectedSlide]) + ( product[product.selectedColor].p[product.selectedColor == 'blue' ? product.selectedSlideForBlue : 0])"  >No se ha calculado
                 </span>
 
 
