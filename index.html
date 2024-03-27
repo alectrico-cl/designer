@@ -2844,8 +2844,10 @@
 
         <p id="product-description"
           class="m1">
-	  Si lo prefiere puede seleccionar una batería desde esta galería para que designer elija y configure el cargador que corresponda. Se muestran solo algunos ejemplos. Lo que realmente interesa es el valor de la capacidad, el cual se da en términos de kW.
-	  Revise este ejemplo en https://www.km77.com/coches/audi/q7/2015/estandar/e-tron/q7-e-tron-2016/datos
+	  Puede seleccionar una batería desde esta galería para ver cuando tarda la carga con el cargador que haya seleccionado. Algunos cargadores pueden ser ajustados en la potencia de carga. Para ello elija una protección de Electromovilidad diferente. 
+	  
+	  Revise en https://www.km77.com la potencia de carga máxima que soporta la batería.
+
        </p>
 
 
@@ -2941,6 +2943,21 @@
                 </amp-carousel>
 
               <p class="price-description"> Batería Seleccionada:
+                <span [text]="battery[battery.selectedColor].nombres[battery.selectedSlide]">Audi Q7 3.0 TDI e-tron 275 kW (373 CV)
+                </span>
+                <span [text] ="battery[battery.selectedColor].ids[
+                   battery.selectedColor == 'blue'   ? battery.selectedSlideForBlue   :
+                   battery.selectedColor == 'green'  ? battery.selectedSlideForGreen  :
+                   battery.selectedColor == 'golden' ? battery.selectedSlideForGolden : 
+                   battery.selectedColor == 'coral'  ? battery.selectedSlideForCoral  : 
+                   battery.selectedColor == 'red'    ? battery.selectedSlideForRed    :
+                   0 ]"> 6958
+                   <!-- 6926 es el primer id de las maquetas del grupo del color green, debe verse en el backend o hacer un primer rodaje y tomar el número
+             desde designer, para ello seleccionar green y mover para delante y atrás hasta que se muestr el id del pimero electrodompéstido, este número también debe estar en el input de carga_id-->
+                </span>
+              </p>
+
+              <p class="price-description"> Tiempo de Carga nada:
                 <span [text]="battery[battery.selectedColor].nombres[battery.selectedSlide]">Audi Q7 3.0 TDI e-tron 275 kW (373 CV)
                 </span>
                 <span [text] ="battery[battery.selectedColor].ids[
