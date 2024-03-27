@@ -2845,28 +2845,28 @@
               <div class="product-gallery">
 
                 <ul
-                  [hidden]="batteries.selectedColor != 'green'">
+                  [hidden]="battery.selectedColor != 'green'">
 
 
                   <li>
-                    <amp-img on="tap:AMP.setState({batteries: {selectedSlideForGreen: 0, selectedSlide: 0}})"
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 0, selectedSlide: 0}})"
                      src="/img/led_60_40.png"
                       width="60"
                       height="40"
                       class=""
-                      [class]="batteries.selectedSlideForGreen == 0 ? 'selected fadeIn' : '' "
+                      [class]="battery.selectedSlideForGreen == 0 ? 'selected fadeIn' : '' "
                       tabindex="0"
                       role="button">
                     </amp-img>
                   </li>
 
                   <li>
-                    <amp-img on="tap:AMP.setState({batteries: {selectedSlideForGreen: 1, selectedSlide: 1}})"
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 1, selectedSlide: 1}})"
                       src="/img/ampolleta_incandescente_60_40.png"
                       width="60"
                       height="40"
                       class="selected"
-                      [class]="batteries.selectedSlideForGreen == 1 ? 'selected' : '' "
+                      [class]="battery.selectedSlideForGreen == 1 ? 'selected' : '' "
                       tabindex="0"
                       role="button">
                     </amp-img>
