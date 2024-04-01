@@ -2908,6 +2908,19 @@
                       role="button">
                     </amp-img>
                   </li>
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 2, selectedSlide: 2}})"
+                      src="/img/audi-etron.jpg"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="battery.selectedSlideForGreen == 2 ? 'selected' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
                 </ul>
               </div>
 
@@ -2939,6 +2952,16 @@
                     role="button"
                     tabindex="0">
                   </amp-img>
+
+                  <amp-img src="/img/audi-etron.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
 
                 </amp-carousel>
 
