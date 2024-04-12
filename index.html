@@ -2921,6 +2921,33 @@
                     </amp-img>
                   </li>
 
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 3, selectedSlide: 3}})"
+                      src="/img/peugeot-3008.jpg"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="battery.selectedSlideForGreen == 3 ? 'selected' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
+                  <li>
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 4, selectedSlide: 4}})"
+                      src="/img/peugeot-e-partner.jpg"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="battery.selectedSlideForGreen == 4 ? 'selected' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
+
+
                 </ul>
               </div>
 
@@ -2954,6 +2981,25 @@
                   </amp-img>
 
                   <amp-img src="/img/e-tron.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+
+                  <amp-img src="/img/peugeot-3008.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
+                  <amp-img src=t"/img/peugeot-e-partner.jpg"
                     width="1024"
                     height="682"
                     layout="responsive"
