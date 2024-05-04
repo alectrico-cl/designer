@@ -2898,18 +2898,6 @@
                   </li>
 
                   <li>
-                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 1, selectedSlide: 1}})"
-                      src="/img/tesla_model_3_2024_model_3_8685_1.jpg"
-                      width="60"
-                      height="40"
-                      class=""
-                      [class]="battery.selectedSlideForGreen == 1 ? 'selected' : '' "
-                      tabindex="0"
-                      role="button">
-                    </amp-img>
-                  </li>
-
-                  <li>
                     <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 2, selectedSlide: 2}})"
                       src="/img/e-tron.jpg"
                       width="60"
@@ -2946,6 +2934,19 @@
                     </amp-img>
                   </li>
 
+		  <li>
+                    <amp-img on="tap:AMP.setState({battery: {selectedSlideForGreen: 1, selectedSlide: 1}})"
+                      src="/img/tesla_model_3_2024_model_3_8685_1.jpg"
+                      width="60"
+                      height="40"
+                      class=""
+                      [class]="battery.selectedSlideForGreen == 1 ? 'selected' : '' "
+                      tabindex="0"
+                      role="button">
+                    </amp-img>
+                  </li>
+
+
 
 
                 </ul>
@@ -2963,15 +2964,6 @@
                   [hidden]="battery.selectedColor != 'green'">
 
                   <amp-img src="/img/details-on-audi-s-battery-technology.webp"
-                    width="1024"
-                    height="682"
-                    layout="responsive"
-                    on="tap:gallery-lightbox"
-                    role="button"
-                    tabindex="0">
-                  </amp-img>
-
-                  <amp-img src="/img/tesla_model_3_2024_model_3_8685_1.jpg"
                     width="1024"
                     height="682"
                     layout="responsive"
@@ -3007,6 +2999,16 @@
                     role="button"
                     tabindex="0">
                   </amp-img>
+
+                  <amp-img src="/img/tesla_model_3_2024_model_3_8685_1.jpg"
+                    width="1024"
+                    height="682"
+                    layout="responsive"
+                    on="tap:gallery-lightbox"
+                    role="button"
+                    tabindex="0">
+                  </amp-img>
+
 
 
                 </amp-carousel>
